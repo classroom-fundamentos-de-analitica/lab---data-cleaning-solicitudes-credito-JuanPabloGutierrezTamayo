@@ -6,10 +6,6 @@ Realice la limpieza del dataframe. Los tests evaluan si la limpieza fue realizad
 correctamente. Tenga en cuenta datos faltantes y duplicados.
 
 """
-from pickletools import long4
-import pandas as pd
-from IPython.display import display
-pd.options.display.max_columns = None
 import pandas as pd
 
 def clean_data():
