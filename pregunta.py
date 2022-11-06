@@ -26,6 +26,9 @@ def clean_data():
     SC=SC.replace(to_replace="(_)|(-)",value=" ",regex=True)    
     SC=SC.replace(to_replace="[,$]|(\.00$)",value="",regex=True)
 
+    SC.monto_del_credito = SC.monto_del_credito.astype("int")
+
+    SC.comuna_ciudadano = SC.comuna_ciudadano.astype("float")
 
     SC.drop_duplicates(inplace = True)
 
